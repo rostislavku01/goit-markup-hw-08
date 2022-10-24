@@ -12,9 +12,11 @@ body {
 /*header*/
 
 .container {
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
+    width: 1200px;
 }
 
 
@@ -32,8 +34,10 @@ address {
     text-decoration: none;
 }
 
+
 .page-header {
     background-color: #FFFFFF;
+    border-bottom: transparent;
 }
 
 .logo {
@@ -54,6 +58,9 @@ address {
 /*  Site nav */
 
 .site-nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -70,6 +77,9 @@ address {
 }
 
 .header-tel-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -78,6 +88,9 @@ address {
 }
 
 .header-mail-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -184,8 +197,9 @@ address {
 }
 
 .team-img {
+    display: block;
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .team-name {
@@ -265,8 +279,9 @@ address {
 }
 
 .portfolio-photo {
+    display: block;
     margin-top: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .portfolio-title {
@@ -283,4 +298,18 @@ address {
     line-height: calc(30 / 16);
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+}
+
+.description-main {
+    padding: 30px 70px 30px 70px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+.portfolio-content {
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio-text {
+    padding: 20px 24px 20px 24px;
 }
