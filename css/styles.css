@@ -35,7 +35,7 @@ address {
 /*header*/
 .page-header {
     background-color: #FFFFFF;
-    border-bottom: transparent;
+    border-bottom: 1px solid #ECECEC;;
 }
 
 .main-nav {
@@ -44,6 +44,10 @@ address {
 }
 
 .logo {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 24px;
+    padding-bottom: 25px;
     font-family: 'Raleway';
     font-size: 26px;
     line-height: calc(31 / 26);
@@ -135,6 +139,9 @@ address {
 
 
 .hero-title {
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0px;
     margin-bottom: 30px;
     font-weight: 900;
@@ -168,12 +175,10 @@ address {
 
 .details {
     background-color: #F5F5F5;
-}
-
-.details-description {
     padding-top:94px;
     padding-bottom: 94px;
 }
+
 
 .details-list {
     display: flex;
@@ -204,6 +209,8 @@ address {
 
 .whatdo {
     background-color: #F5F5F5;
+    margin-top: 0px;
+    padding-bottom: 94px;
 }
 
 .whatdo-list {
@@ -226,28 +233,29 @@ address {
 /* team */
 
 .team {
+    margin-top: 0px;
+    padding-bottom: 94px;
     background-color: #F5F4FA;
 }
 
-.team-container {
-    padding-top: 94px;
-    padding-bottom: 94px;
-    margin-top: 0px;
-}
-
-.team-description {
+.team-list-main {
     display: flex;
-}
-
-.team-div {
-    width: 270px;
-    height: 368px;
-    margin-right: 30px;
+    align-items: center;
     margin-top: 0px;
-    background-color: #FFFFFF;
+    margin-bottom: 94px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-.team-div:last-child {
+
+.team-item {
+    background-color: #FFFFFF;
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:last-child {
     margin-right: 0px;
 }
 
@@ -263,11 +271,11 @@ address {
 
 .team-img {
     width: 270px;
-    height: 260px;
     display: block;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
 }
+
 
 .team-name {
     margin-top: 0px;
@@ -282,6 +290,7 @@ address {
 
 .team-role {
     margin-top: 0px;
+    margin-bottom: 30px;
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
@@ -293,12 +302,10 @@ address {
 
 .footer {
     background-color: #2F303A;
-}
-
-.footer-container {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
 
 .footer-logo {
     margin-top: 0px;
@@ -347,10 +354,20 @@ address {
 .portfolio-list {
     display: flex;
     justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.list-btn {
+    margin-right: 8px;
+}
+
+.list-btn:last-child {
+    margin-right: 0px;
 }
 
 .portfolio-button {
-    margin: 0px 8px 50px 8px;
+    padding: 6px 22px;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
@@ -362,6 +379,7 @@ address {
     border-radius: 4px;
     background-color: #F5F4FA;
 }
+
 
 .portfolio-button:hover, .portfolio-button:focus {
     color: #FFFFFF;
@@ -385,17 +403,14 @@ address {
 }
 
 .portfolio-description {
+    margin-top: 0px;
+    margin-bottom: 20px;
     font-size: 16px;
     line-height: calc(30 / 16);
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 
-.description-main {
-    padding: 30px 70px 30px 70px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
-}
 
 .portfolio-content {
     width: 370px;
