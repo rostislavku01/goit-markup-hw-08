@@ -10,6 +10,10 @@ body {
 }
 
 /* Утиліти*/
+ul, p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -198,7 +202,6 @@ address {
 }
 
 .details-text {
-    margin-top: 0px;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -241,7 +244,6 @@ address {
 .team-list-main {
     display: flex;
     align-items: center;
-    margin-top: 0px;
     margin-bottom: 94px;
     padding-left: 0px;
     padding-right: 0px;
@@ -249,6 +251,7 @@ address {
 
 
 .team-item {
+    height: 368px;
     background-color: #FFFFFF;
     margin-right: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -278,7 +281,6 @@ border-radius: 0px 0px 4px 4px;
 
 
 .team-name {
-    margin-top: 0px;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
@@ -289,8 +291,6 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .team-role {
-    margin-top: 0px;
-    margin-bottom: 30px;
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
@@ -307,10 +307,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 
-.footer-logo {
-    margin-top: 0px;
-    margin-bottom: 20px;
-}
+
 .first-footer-logo {
     color: var(--accent-color);
 }
@@ -320,7 +317,6 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .footer-adress {
-    margin-top: 0px;
     margin-bottom: 9px;
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -329,7 +325,6 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .footer-mail {
-    margin-top: 0px;
     margin-bottom: 9px;
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -338,8 +333,6 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .footer-tel {
-    margin-top: 0px;
-    margin-bottom: 0px;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -403,8 +396,6 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .portfolio-description {
-    margin-top: 0px;
-    margin-bottom: 20px;
     font-size: 16px;
     line-height: calc(30 / 16);
     letter-spacing: 0.03em;
