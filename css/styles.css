@@ -117,6 +117,18 @@ address {
     color: var(--primary-text-color);
 }
 
+.header-tel-link::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/smartphone.svg);
+}
+
 .header-mail-link {
     display: block;
     padding-top: 32px;
@@ -128,6 +140,21 @@ address {
     color: var(--primary-text-color);
 }
 
+.header-mail-link::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/envelope.svg);
+}
+
+.header-mail-link::before::after {
+    background-color: var(--accent-color);
+}
 .header-mail-link:hover {
     color: var(--accent-color);
 }
@@ -135,7 +162,11 @@ address {
 /* hero */
 
 .hero {
-    background: #2F303A;
+    background-color: rgba(47, 48, 58, 0.4);
+    background-image: url(../images/background-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
@@ -183,6 +214,32 @@ address {
     padding-bottom: 94px;
 }
 
+.details-item::before {
+    display: block;
+    margin-bottom: 30px;
+    content: "";
+    height: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
+.icon-antenna::before {
+    background-image: url(../images/antenna\ 1.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/clock\ 1.svg);
+}
+
+.icon-diagram::before {
+    background-image: url(../images/diagram\ 1.svg);
+}
+
+.icon-cosmonaut::before {
+    background-image: url(../images/astronaut\ 1.svg);
+}
 
 .details-list {
     display: flex;
@@ -251,11 +308,11 @@ address {
 
 
 .team-item {
-    height: 368px;
+    height: 428px;
     background-color: #FFFFFF;
     margin-right: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-item:last-child {
@@ -291,12 +348,29 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .team-role {
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
+
+.team-socials {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-item {
+    margin-right: 10px;
+}
+
+.socials-item:last-child {
+    margin-right: 0px;
+}
+
 
 /* footer */
 
