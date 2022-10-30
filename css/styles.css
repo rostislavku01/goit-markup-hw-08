@@ -117,16 +117,12 @@ address {
     color: var(--primary-text-color);
 }
 
+.header-tel-link:hover {
+    color: var(--accent-color);
+}
+
 .header-tel-link::before {
-    display: inline-block;
-    content: "";
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(../images/smartphone.svg);
+    
 }
 
 .header-mail-link {
