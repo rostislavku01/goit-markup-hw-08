@@ -107,7 +107,8 @@ address {
 }
 
 .header-tel-link {
-    display: block;
+    display: flex;
+    justify-content: center;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -121,12 +122,32 @@ address {
     color: var(--accent-color);
 }
 
-.header-tel-link::before {
-    
+
+.contact-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: #757575;
+}
+
+.contact-envelope:hover {
+    fill: var(--accent-color);
+}
+
+.contact-phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill:#757575;
+}
+
+.contact-phone:hover {
+    fill: var(--accent-color);
 }
 
 .header-mail-link {
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
@@ -136,17 +157,7 @@ address {
     color: var(--primary-text-color);
 }
 
-.header-mail-link::before {
-    display: inline-block;
-    content: "";
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(../images/envelope.svg);
-}
+
 
 .header-mail-link::before::after {
     background-color: var(--accent-color);
@@ -210,31 +221,12 @@ address {
     padding-bottom: 94px;
 }
 
-.details-item::before {
-    display: block;
-    margin-bottom: 30px;
-    content: "";
-    height: 120px;
-    background-position: center;
-    background-repeat: no-repeat;
+.details-icon {
+    width: 70px;
+    height: 70px;
     background-color: #F5F4FA;
     border-radius: 4px;
-}
-
-.icon-antenna::before {
-    background-image: url(../images/antenna\ 1.svg);
-}
-
-.icon-clock::before {
-    background-image: url(../images/clock\ 1.svg);
-}
-
-.icon-diagram::before {
-    background-image: url(../images/diagram\ 1.svg);
-}
-
-.icon-cosmonaut::before {
-    background-image: url(../images/astronaut\ 1.svg);
+    margin: 25px 100px;
 }
 
 .details-list {
@@ -360,11 +352,31 @@ address {
 }
 
 .socials-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
     margin-right: 10px;
+}
+
+.socials-item:hover {
+    background-color: var(--accent-color);
+    border-radius: 50%;
 }
 
 .socials-item:last-child {
     margin-right: 0px;
+}
+
+.team-social-icon {
+    width: 20px;
+    height: 20px;
+    fill:#AFB1B8;
+}
+
+.team-social-icon:hover {
+    fill: #FFFFFF;
 }
 
 /*Clients*/
@@ -397,9 +409,25 @@ address {
     margin-right: 30px;
 }
 
+.clients-item:hover {
+    border: 1px solid var(--accent-color);
+}
+
 .clients-item:last-child {
     margin-right: 0px;
 }
+
+.clients-icon {
+    width: 106px;
+    height: 60px;
+    fill:#AFB1B8;
+}
+
+.clients-icon:hover {
+    fill: var(--accent-color);
+}
+
+
 
 /* footer */
 
@@ -463,11 +491,28 @@ address {
 }
 
 .footer-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
     margin-right: 22px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-item:hover {
+    background-color: var(--accent-color);
 }
 
 .footer-item:last-child {
     margin-right: 0px;
+}
+
+.footer-icon {
+    width: 20px;
+    height: 20px;
+    fill: #FFFFFF;
 }
 
 /* PORTFOLIO */
