@@ -158,10 +158,6 @@ address {
 }
 
 
-
-.header-mail-link::before::after {
-    background-color: var(--accent-color);
-}
 .header-mail-link:hover {
     color: var(--accent-color);
 }
