@@ -127,22 +127,15 @@ address {
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    fill: #757575;
+    fill: currentColor;
 }
 
-.contact-envelope:hover {
-    fill: var(--accent-color);
-}
 
 .contact-phone {
     width: 10px;
     height: 16px;
     margin-right: 10px;
-    fill:#757575;
-}
-
-.contact-phone:hover {
-    fill: var(--accent-color);
+    fill:currentColor;
 }
 
 .header-mail-link {
@@ -165,21 +158,22 @@ address {
 /* hero */
 
 .hero {
-    background-color: rgba(47, 48, 58, 0.4);
-    background-image: url(../images/background-hero.jpg);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/background-hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    
 }
 
-
 .hero-title {
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 0px;
     margin-bottom: 30px;
     font-weight: 900;
@@ -212,16 +206,18 @@ address {
 /* details */
 
 .details {
-    background-color: #F5F5F5;
     padding-top:94px;
     padding-bottom: 94px;
 }
 
+.details-icon-div {
+    display: flex;
+    background: #F5F4FA;
+border-radius: 4px;
+}
 .details-icon {
     width: 70px;
     height: 70px;
-    background-color: #F5F4FA;
-    border-radius: 4px;
     margin: 25px 100px;
 }
 
@@ -252,7 +248,6 @@ address {
 /* whatdo */
 
 .whatdo {
-    background-color: #F5F5F5;
     margin-top: 0px;
     padding-bottom: 94px;
 }
@@ -278,6 +273,7 @@ address {
 
 .team {
     margin-top: 0px;
+    padding-top: 94px;
     padding-bottom: 94px;
     background-color: #F5F4FA;
 }
@@ -285,7 +281,6 @@ address {
 .team-list-main {
     display: flex;
     align-items: center;
-    margin-bottom: 94px;
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -344,22 +339,37 @@ address {
     margin-right: 32px;
     margin-left: 32px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 .socials-item {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 44px;
-    height: 44px;
     margin-right: 10px;
 }
 
-.socials-item:hover {
-    background-color: var(--accent-color);
-    border-radius: 50%;
+
+.team-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
 }
+
+.team-social-link:visited {
+    color:#AFB1B8;
+}
+
+.team-social-link:hover {
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    border-radius: 50%;   
+}
+
+
 
 .socials-item:last-child {
     margin-right: 0px;
@@ -368,17 +378,15 @@ address {
 .team-social-icon {
     width: 20px;
     height: 20px;
-    fill:#AFB1B8;
+    fill:currentColor;
 }
 
-.team-social-icon:hover {
-    fill: #FFFFFF;
-}
+
+
 
 /*Clients*/
 .clients {
-    background-color: #F5F5F5;
-    margin-top: 0px;
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 .clients-list {
@@ -398,32 +406,38 @@ address {
 }
 
 .clients-item {
-    box-sizing: border-box;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    padding: 16px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 30px;
-}
-
-.clients-item:hover {
-    border: 1px solid var(--accent-color);
 }
 
 .clients-item:last-child {
     margin-right: 0px;
 }
 
+.clients-link {
+    width: 170px;
+    height: 92px;  
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px;
+}
+
+.clients-link:visited {
+    color:#AFB1B8;
+}
+
+.clients-link:hover {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+}
+
 .clients-icon {
     width: 106px;
     height: 60px;
-    fill:#AFB1B8;
+    fill:currentColor;
 }
-
-.clients-icon:hover {
-    fill: var(--accent-color);
-}
-
-
 
 /* footer */
 
@@ -488,27 +502,35 @@ address {
 
 .footer-item {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    margin-right: 22px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-}
-
-.footer-item:hover {
-    background-color: var(--accent-color);
+    margin-right: 10px;
 }
 
 .footer-item:last-child {
     margin-right: 0px;
 }
 
+.footer-link:visited {
+    color: #FFFFFF;
+}
+
+.footer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-link:hover {
+    background-color: var(--accent-color);
+}
+
 .footer-icon {
     width: 20px;
     height: 20px;
-    fill: #FFFFFF;
+    fill: currentColor;
 }
 
 /* PORTFOLIO */
@@ -581,6 +603,10 @@ address {
     margin-right: 30px;
     margin-bottom: 30px;
     border: 1px solid #EEEEEE;
+}
+
+.portfolio-content:hover {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.12));
 }
 
 .portfolio-content:nth-last-child(-n +3) {
