@@ -451,6 +451,11 @@ border-radius: 4px;
     display: flex;
     align-items: center;
 }
+
+.footer-logo {
+    padding-top:0px;
+    padding-bottom: 20px;
+}
 .first-footer-logo {
     color: var(--accent-color);
 }
