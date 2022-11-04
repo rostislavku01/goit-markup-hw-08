@@ -9,7 +9,8 @@ body {
     font-family: 'Roboto';
 }
 
-/* Утиліти*/
+    /* Утиліти*/
+    
 ul, p {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -36,7 +37,8 @@ address {
     text-decoration: none;
 }
 
-/*header*/
+    /*header*/
+
 .page-header {
     background-color: #FFFFFF;
     border-bottom: 1px solid #ECECEC;;
@@ -46,6 +48,8 @@ address {
     display: flex;
     align-items: center;
 }
+
+    /*LOGO*/
 
 .logo {
     margin-top: 0px;
@@ -66,13 +70,14 @@ address {
     color: var(--title-text-color);
 }
 
-/*  Site nav */
+
+    /*  Site nav */
+
 
 .site-nav {
     display: flex;
     margin-left: 93px;
 }
-
 
 .site-nav .item + .item {
     margin-left: 40px;
@@ -121,7 +126,7 @@ address {
     margin-left: 50px;
 }
 
-.header-tel-link {
+.header-tel-link, .header-mail-link {
     display: flex;
     justify-content: center;
     padding-top: 32px;
@@ -133,44 +138,25 @@ address {
     color: var(--primary-text-color);
 }
 
-.header-tel-link:hover, .header-tel-link:focus {
+.header-tel-link:hover, .header-tel-link:focus, .header-mail-link:hover, .header-mail-link:focus {
     color: var(--accent-color);
 }
 
-
-.contact-envelope {
+.contact-envelope, .contact-phone {
     width: 16px;
     height: 12px;
     margin-right: 10px;
     fill: currentColor;
 }
 
-
 .contact-phone {
     width: 10px;
     height: 16px;
-    margin-right: 10px;
-    fill:currentColor;
-}
-
-.header-mail-link {
-    display: flex;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
 }
 
 
-.header-mail-link:hover, .header-mail-link:focus {
-    color: var(--accent-color);
-}
+    /* hero */
 
-/* hero */
 
 .hero {
     padding-left: 15px;
@@ -185,7 +171,6 @@ address {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    
 }
 
 .hero-title {
@@ -218,7 +203,9 @@ address {
     border: 1px solid transparent;
 }
 
-/* details */
+
+    /* details */
+
 
 .details {
     padding-top:94px;
@@ -234,6 +221,7 @@ address {
     background: #F5F4FA;
     border-radius: 4px;
 }
+
 .details-icon {
     width: 70px;
     height: 70px;
@@ -247,6 +235,7 @@ address {
 .details-list li {
     margin-right: 30px;
 }
+
 .details-title {
     margin-top: 0px;
     margin-bottom: 10px;
@@ -264,7 +253,9 @@ address {
     color: var(--primary-text-color);
 }
 
-/* whatdo */
+
+    /* whatdo */
+
 
 .whatdo {
     margin-top: 0px;
@@ -279,6 +270,7 @@ address {
     margin-right: 30px;
     position: relative;
 }
+
 .whatdo-title {
     margin-top: 0px;
     margin-bottom: 50px;
@@ -302,7 +294,9 @@ address {
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-/* team */
+
+    /* team */
+
 
 .team {
     margin-top: 0px;
@@ -317,7 +311,6 @@ address {
     padding-left: 0px;
     padding-right: 0px;
 }
-
 
 .team-item {
     height: 428px;
@@ -348,7 +341,6 @@ address {
     margin-bottom: 30px;
 }
 
-
 .team-name {
     margin-bottom: 10px;
     font-weight: 500;
@@ -369,11 +361,11 @@ address {
 }
 
 .team-socials {
-    margin-right: 32px;
-    margin-left: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 32px;
+    margin-left: 32px;
 }
 
 .socials-item {
@@ -383,6 +375,9 @@ address {
     margin-right: 10px;
 }
 
+.socials-item:last-child {
+    margin-right: 0px;
+}
 
 .team-social-link {
     display: flex;
@@ -402,12 +397,6 @@ address {
     border-radius: 50%;   
 }
 
-
-
-.socials-item:last-child {
-    margin-right: 0px;
-}
-
 .team-social-icon {
     width: 20px;
     height: 20px;
@@ -415,13 +404,14 @@ address {
 }
 
 
+    /*Clients*/
 
 
-/*Clients*/
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .clients-list {
     display: flex;
     align-items: center;
@@ -472,7 +462,9 @@ address {
     fill:currentColor;
 }
 
-/* footer */
+
+    /* footer */
+
 
 .footer {
     background-color: #2F303A;
@@ -489,6 +481,7 @@ address {
     padding-top:0px;
     padding-bottom: 20px;
 }
+
 .first-footer-logo {
     color: var(--accent-color);
 }
@@ -505,7 +498,7 @@ address {
     color: #FFFFFF;
 }
 
-.footer-mail {
+.footer-mail, .footer-tel {
     margin-bottom: 9px;
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -515,9 +508,6 @@ address {
 
 .footer-tel {
     font-size: 14px;
-    line-height: calc(24 / 14);
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-title {
@@ -571,11 +561,15 @@ address {
     fill: currentColor;
 }
 
-/* PORTFOLIO */
+
+    /* PORTFOLIO */
+
+
 .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .portfolio-list {
     display: flex;
     justify-content: center;
@@ -604,7 +598,6 @@ address {
     border-radius: 4px;
     background-color: #F5F4FA;
 }
-
 
 .portfolio-button:hover, .portfolio-button:focus {
     color: #FFFFFF;
@@ -651,15 +644,12 @@ address {
     margin-right: 0px;
 }
 
-
 .portfolio-photo {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0px;
     margin-bottom: 0px;
 }
-
-
 
 .portfolio-title {
     margin-top: 0px;
@@ -671,7 +661,7 @@ address {
 }
 
 .portfolio-text {
-    padding: 20px 24px 20px 24px;
+    padding: 20px 24px;
 }
 
 .portfolio-description {
@@ -680,6 +670,10 @@ address {
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
+
+
+    /* MODAL */
+
 
 .backdrop {
     position: fixed;
