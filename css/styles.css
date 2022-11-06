@@ -299,6 +299,11 @@ address {
     height: 70px;
     bottom: 0;
     width: 100%;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
     color: #FFFFFF;
     background-color: rgba(47, 48, 58, 0.8);
 }
@@ -489,7 +494,7 @@ address {
 
 .footer-content {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 .footer-logo {
@@ -642,7 +647,6 @@ address {
     transform: translateY(0);
 }
 .portfolio-content:hover {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.12));
     border: 1px solid rgba(238, 238, 238, 1);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -723,6 +727,7 @@ address {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 350ms linear, visibility 350ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 1;
     visibility: visible;
     pointer-events: initial;
@@ -739,16 +744,18 @@ address {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    height: 581px;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     opacity: 1;
-    transition-duration: 500ms;
+    transition-duration: 350ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
+    transform: scale(0.1);
     opacity: 0;
 }
 
