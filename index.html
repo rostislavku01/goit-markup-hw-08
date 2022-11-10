@@ -66,6 +66,39 @@
             alt="Close" />
         </button>
       </div>
+      <form class="form is-hidden" data-modal>
+        <div class="form-title">
+          <h3>Залиште свої дані, ми вам передзвонимо</h3>
+        </div>
+        <div class="form-field">
+          <label for="name">Ім'я</label>
+          <input type="text" name="name" id="name" />
+        </div>
+        <div class="form-field">
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel" />
+        </div>
+        <div class="form-field">
+          <label for="mail">Пошта</label>
+          <input type="email" name="mail" id="mail" />
+        </div>
+        <div class="comment-field">
+          <label for="comment">Коментар</label>
+          <textarea
+            name="comment"
+            id="comment"
+            placeholder="Введіть текст"></textarea>
+        </div>
+        <div class="policy-field">
+          <input type="checkbox" name="policy" id="policy" />
+          <label for="policy"
+            >Погоджуюся з розсилкою та приймаю Умови договору</label
+          >
+        </div>
+        <div class="submit-container">
+          <button type="submit" class="submit-btn">Відправити</button>
+        </div>
+      </form>
     </div>
     <main>
       <!--hero-->
