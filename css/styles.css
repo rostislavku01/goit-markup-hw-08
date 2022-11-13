@@ -17,6 +17,7 @@ h3 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -588,6 +589,51 @@ address {
   fill: currentColor;
 }
 
+.footer-mail {
+  margin-left: auto;
+}
+
+.footer-mail-items {
+  display: flex;
+}
+
+.footer-mail-item {
+  margin-right: 12px;
+}
+
+.footer-mail-item input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+}
+
+.button-sbscrb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+.footer-last-icon {
+  margin-left: 10px;
+  height: 24px;
+  width: 24px;
+  fill: #ffffff;
+}
+
 /* PORTFOLIO */
 
 .portfolio {
@@ -778,7 +824,6 @@ address {
   display: flex;
   flex-direction: column;
   position: absolute;
-  padding: 40px;
   height: 581px;
   left: 50%;
   top: 50%;
@@ -796,6 +841,7 @@ address {
 .form-title h3 {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
   margin-bottom: 12px;
   width: 448px;
   font-weight: 700;
@@ -812,7 +858,15 @@ address {
   margin-bottom: 10px;
 }
 
+.form-icons {
+  display: inline-block;
+  position: absolute;
+  height: 12px;
+  width: 12px;
+}
+
 .form-field input {
+  position: relative;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -841,12 +895,42 @@ address {
 }
 
 .policy-field {
+}
+
+.checkbox {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   margin-bottom: 30px;
 }
 
+.checkbox-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.icon-check {
+  position: absolute;
+  top: 442px;
+  left: 22px;
+  right: 460px;
+  bottom: 124px;
+  width: 16px;
+  height: 15px;
+}
+
+.checkbox:checked + .checked {
+  opacity: 1;
+}
+
+.checked {
+  opacity: 0;
+}
+
 .policy-field label {
+  height: 24px;
+  width: 423px;
   margin-left: 8.38px;
   font-family: "Roboto";
   font-style: normal;
@@ -854,14 +938,23 @@ address {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-
   color: #757575;
+}
+
+.policy-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(33, 150, 243, 1);
 }
 
 .submit-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
+
 .submit-btn {
   margin-bottom: 40px;
   padding: 10px 52px;
