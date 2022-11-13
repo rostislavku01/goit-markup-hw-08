@@ -105,15 +105,17 @@
             id="comment"
             placeholder="Введіть текст"></textarea>
         </div>
-        <div class="policy-field">
-          <label class="checkbox">
-            <input type="checkbox" class="checkbox-input" />
-            <svg class="icon-check unchecked">
-              <use href="./images/symbol-defs.svg#icon-unchecked"></use>
-            </svg>
-            <svg class="icon-check checked">
-              <use href="./images/symbol-defs.svg#icon-checked"></use>
-            </svg>
+        <div class="policy-field checkbox">
+          <input id="policy" type="checkbox" class="checkbox-input" />
+          <label for="policy" class="checkbox-label">
+            <span>
+              <svg class="checkbox-icon unchecked">
+                <use href="./images/symbol-defs.svg#icon-unchecked"></use>
+              </svg>
+              <svg class="checkbox-icon checked">
+                <use href="./images/symbol-defs.svg#icon-checked"></use>
+              </svg>
+            </span>
             <span class="policy-text">
               Погоджуюся з розсилкою та приймаю
               <a href="" class="policy-link">Умови договору</a>
