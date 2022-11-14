@@ -817,6 +817,8 @@ address {
   right: 8px;
   fill: #000000;
   stroke: rgba(0, 0, 0, 0.1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-image:hover {
@@ -883,6 +885,8 @@ address {
   position: absolute;
   top: 14px;
   left: 14px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field .text-input {
@@ -892,6 +896,8 @@ address {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 40px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-field .text-input:focus-visible {
@@ -933,6 +939,8 @@ address {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment-field label {
@@ -974,6 +982,8 @@ address {
 .checkbox-icon {
   width: 16px;
   height: 16px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-label .checkbox-icon.checked {
