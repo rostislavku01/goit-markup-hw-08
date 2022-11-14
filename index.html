@@ -58,12 +58,10 @@
     </header>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close" data-modal-close>
-          <img
-            src="./images/close.svg"
-            width="30px"
-            height="30px"
-            alt="Close" />
+        <button type="button" class="button" data-modal-close>
+          <svg class="close-image">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
         </button>
       </div>
       <form class="form is-hidden" data-modal>
@@ -72,35 +70,35 @@
         </div>
         <div class="form-field">
           <label class="form-label" for="name">Ім'я</label>
-          <input type="text" name="name" id="name" class="form-input" />
-          <span class="form-image">
-            <svg class="form-icons name">
+          <div class="control">
+            <input type="text" name="name" id="name" class="text-input" />
+            <svg class="form-icon name">
               <use href="./images/symbol-defs.svg#icon-name-icon"></use>
             </svg>
-          </span>
+          </div>
         </div>
         <div class="form-field">
           <label class="form-label" for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel" class="form-input" />
-          <span class="form-image"
-            ><svg class="form-icons phone">
+          <div class="control">
+            <input type="tel" name="tel" id="tel" class="text-input" />
+            <svg class="form-icon phone">
               <use href="./images/symbol-defs.svg#icon-phone"></use>
             </svg>
-          </span>
+          </div>
         </div>
         <div class="form-field">
           <label class="form-label" for="mail">Пошта</label>
-          <input type="email" name="mail" id="mail" class="form-input" />
-          <span class="form-image"
-            ><svg class="form-icons envelope">
+          <div class="control">
+            <input type="email" name="mail" id="mail" class="text-input" />
+            <svg class="form-icon envelope">
               <use href="./images/symbol-defs.svg#icon-envelope2"></use>
             </svg>
-          </span>
+          </div>
         </div>
         <div class="comment-field">
           <label class="form-label" for="comment">Коментар</label>
           <textarea
-            class="form-input"
+            class="text-input"
             name="comment"
             id="comment"
             placeholder="Введіть текст"></textarea>
@@ -108,7 +106,7 @@
         <div class="policy-field checkbox">
           <input id="policy" type="checkbox" class="checkbox-input" />
           <label for="policy" class="checkbox-label">
-            <span>
+            <span class="icon-box">
               <svg class="checkbox-icon unchecked">
                 <use href="./images/symbol-defs.svg#icon-unchecked"></use>
               </svg>
