@@ -809,6 +809,9 @@ address {
   opacity: 0;
 }
 
+.button-close {
+  display: contents;
+}
 .close-image {
   position: absolute;
   width: 30px;
