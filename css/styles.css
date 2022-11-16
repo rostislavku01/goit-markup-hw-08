@@ -612,6 +612,7 @@ address {
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.03em;
+  color: #ffffff;
 }
 
 .button-sbscrb {
@@ -620,13 +621,18 @@ address {
   align-items: center;
   width: 200px;
   height: 50px;
-  background-color: var(--accent-color);
+  font-family: "Roboto";
+  font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
+  align-items: center;
+  text-align: center;
   letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  color: #ffffff;
+  border: 1px solid transparent;
 }
 .footer-last-icon {
   margin-left: 10px;
@@ -811,16 +817,19 @@ address {
 }
 
 .button-close {
-  display: contents;
-}
-.close-image {
+  padding: 0px;
   position: absolute;
-  width: 30px;
-  height: 30px;
   top: 8px;
   right: 8px;
-  fill: #000000;
   stroke: rgba(0, 0, 0, 0.1);
+  border: transparent;
+  background-color: transparent;
+}
+
+.close-image {
+  width: 30px;
+  height: 30px;
+  fill: #000000;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -873,6 +882,7 @@ address {
 }
 
 .form-label {
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
