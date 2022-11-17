@@ -65,26 +65,30 @@ address {
   letter-spacing: 0.03em;
 }
 
-.first-part {
+.logo__first-part {
   color: var(--accent-color);
 }
 
-.last-part {
+.logo__last-part {
   color: var(--title-text-color);
 }
 
-/*  Site nav */
+/*  Navigation */
 
 .site-nav {
   display: flex;
   margin-left: 93px;
 }
 
-.site-nav .item + .item {
+.site-nav__item {
   margin-left: 40px;
 }
 
-.site-nav-link {
+.site-nav__item :first-child {
+  margin-left: 0px;
+}
+
+.site-nav__link {
   display: inline-block;
   position: relative;
   padding-top: 32px;
@@ -98,6 +102,15 @@ address {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav__link:hover,
+.site-nav__link:focus {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
 .active {
@@ -115,14 +128,7 @@ address {
   border-radius: 2px;
 }
 
-.site-nav-link:hover,
-.site-nav-link:focus {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-}
+/* Contact */
 
 .contact-nav {
   display: flex;
