@@ -9,7 +9,7 @@ body {
   font-family: "Roboto";
 }
 
-/* Утиліти*/
+/*! Утиліти */
 
 ul,
 p,
@@ -40,7 +40,7 @@ address {
   text-decoration: none;
 }
 
-/*header*/
+/*!header*/
 
 .header {
   background-color: #ffffff;
@@ -51,7 +51,7 @@ address {
   display: flex;
   align-items: center;
 }
-/* BUTTON */
+/*! BUTTON */
 .button {
   font-family: "Roboto";
   font-weight: 700;
@@ -88,7 +88,7 @@ address {
   width: 200px;
   height: 50px;
 }
-/*LOGO*/
+/*!LOGO*/
 
 .logo {
   font-family: "Raleway";
@@ -121,7 +121,7 @@ address {
   color: #ffffff;
 }
 
-/*  Navigation */
+/* ! Navigation */
 
 .site-nav {
   display: flex;
@@ -176,7 +176,7 @@ address {
   border-radius: 2px;
 }
 
-/* Contact */
+/* !Contact */
 
 .contacts {
   display: flex;
@@ -218,7 +218,7 @@ address {
   height: 16px;
 }
 
-/* hero */
+/* !hero */
 
 .hero {
   padding-left: 15px;
@@ -252,7 +252,7 @@ address {
   color: #ffffff;
 }
 
-/* details */
+/* !details */
 
 .details {
   padding-top: 94px;
@@ -300,7 +300,7 @@ address {
   color: var(--primary-text-color);
 }
 
-/* whatdo */
+/*! whatdo */
 
 .whatdo {
   margin-top: 0px;
@@ -344,7 +344,7 @@ address {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-/* team */
+/*! team */
 
 .team {
   margin-top: 0px;
@@ -456,7 +456,7 @@ address {
   fill: currentColor;
 }
 
-/*Clients*/
+/*!Clients*/
 
 .clients {
   padding-top: 94px;
@@ -517,7 +517,7 @@ address {
   fill: currentColor;
 }
 
-/* footer */
+/*! footer */
 
 .footer {
   background-color: #2f303a;
@@ -530,7 +530,7 @@ address {
   align-items: baseline;
 }
 
-/* FOOTER NAV */
+/* !FOOTER NAV */
 
 .footer-nav__adress {
   margin-bottom: 9px;
@@ -549,7 +549,7 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* FOOTER SOCIALS */
+/*! FOOTER SOCIALS */
 
 .footer-socials {
   margin-left: 70px;
@@ -605,7 +605,7 @@ address {
   fill: currentColor;
 }
 
-/* FOOTER CONTACTS */
+/*! FOOTER CONTACTS */
 
 .footer-contacts {
   margin-left: auto;
@@ -650,14 +650,14 @@ address {
   fill: #ffffff;
 }
 
-/* PORTFOLIO */
+/*! PORTFOLIO */
 
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-/* PORTFOLIO BUTTONS */
+/*! PORTFOLIO BUTTONS */
 
 .portfolio__list {
   display: flex;
@@ -700,7 +700,7 @@ address {
   border-radius: 4px;
 }
 
-/* PORTFOLIO CONTENT */
+/*! PORTFOLIO CONTENT */
 
 .content {
   display: flex;
@@ -785,7 +785,7 @@ address {
   color: var(--primary-text-color);
 }
 
-/* MODAL */
+/*! MODAL */
 
 .backdrop {
   position: fixed;
@@ -850,7 +850,7 @@ address {
 .close-image:hover {
   fill: var(--accent-color);
 }
-/* FORM MODAL */
+/* !FORM MODAL */
 
 .form {
   display: flex;
@@ -981,7 +981,7 @@ address {
   color: rgba(117, 117, 117, 0.5);
 }
 
-/* CHECKBOX */
+/*! CHECKBOX */
 
 .checkbox {
   display: flex;
