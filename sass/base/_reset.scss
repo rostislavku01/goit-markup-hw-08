@@ -1,0 +1,26 @@
+ul,
+p,
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+address {
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}

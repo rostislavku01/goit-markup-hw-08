@@ -1,0 +1,28 @@
+//UTILS STYLES
+@import "./utils/variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+
+//BASE STYLES
+
+@import "./base/base";
+@import "./base/reset";
+
+//COMPONENTS STYLES
+
+@import "./components/container";
+@import "./components/buttons";
+@import "./components/logo";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/details";
+@import "./components/whatdo";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/socials";
+@import "./components/footer";
+@import "./components/portfolio";
+@import "./components/content";
+@import "./components/backdrop";
+@import "./components/form";
+@import "./components/checkbox";

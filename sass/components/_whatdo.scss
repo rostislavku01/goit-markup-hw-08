@@ -1,0 +1,42 @@
+.whatdo {
+  @extend %container;
+  margin-top: 0px;
+  padding-bottom: 94px;
+}
+
+.whatdo__list {
+  display: flex;
+}
+
+.whatdo__title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.whatdo__list li {
+  margin-right: 30px;
+  position: relative;
+}
+
+.whatdo__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 0;
+  height: 70px;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}
