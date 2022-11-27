@@ -17,11 +17,16 @@
 }
 
 .menu-button {
+  z-index: 1;
   margin: 0;
   padding: 0;
   display: inline-flex;
   border: none;
   background-color: transparent;
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
 
 .menu-button .icon-cross {
