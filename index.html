@@ -21,11 +21,21 @@
   <body>
     <!--header-->
     <header class="header">
-      <div class="nav container">
+      <div class="nav">
         <a href="./index.html" class="logo nav__logo link">
           <span class="logo__main-part">Web</span
           ><span class="logo__second-part--dark">Studio</span>
         </a>
+        <button type="button" class="menu-button is-open">
+          <svg width="40" height="40" aria-label="Menu Open">
+            <use
+              class="icon-menu"
+              href="./images/symbol-defs.svg#icon-menu-mobile"></use>
+            <use
+              class="icon-cross"
+              href="./images/symbol-defs.svg#icon-close-mobile"></use>
+          </svg>
+        </button>
         <nav class="navigation">
           <ul class="site-nav list">
             <li class="site-nav__item">
@@ -199,6 +209,7 @@
           </ul>
         </div>
       </section>
+
       <!--whatdo-->
       <section class="whatdo">
         <div>
@@ -436,7 +447,7 @@
     </main>
     <!--footer-->
     <footer class="footer">
-      <div class="footer-nav container">
+      <div class="footer-nav">
         <div class="footer-nav-container">
           <p class="footer-nav-container__logo logo">
             <span class="logo__main-part">Web</span

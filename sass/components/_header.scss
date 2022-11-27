@@ -4,19 +4,31 @@
 }
 
 .nav {
+  @extend %container;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
 }
 
+.navigation {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
 .site-nav {
   display: flex;
-  margin-left: 93px;
+  margin-left: 87px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .site-nav__item {
-  margin-left: 40px;
-  &:first-child {
-    margin-left: 0px;
+  margin-right: 50px;
+  &:last-child {
+    margin-right: 0px;
   }
 }
 
@@ -58,37 +70,73 @@
 }
 
 .contacts {
-  display: flex;
+  display: none;
   margin-left: auto;
-  &__item {
-    margin-left: 50px;
+  @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
     padding-top: 32px;
     padding-bottom: 32px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.02em;
-    color: var(--primary-text-color);
+  }
+}
+.contacts__item {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
 
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
-  &__item:hover,
-  &__item:focus {
-    color: var(--accent-color);
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+    margin-bottom: 0px;
   }
-  &__envelope,
-  &__phone {
+}
+.contacts__item:hover,
+.contacts__item:focus {
+  color: var(--accent-color);
+}
+.contacts__envelope {
+  fill: currentColor;
+  @media screen and (min-width: 768px) {
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 1200px) {
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    fill: currentColor;
   }
-  &__phone {
-    width: 10px;
+}
+.contacts__phone {
+  width: 10px;
+  fill: currentColor;
+  @media screen and (min-width: 768px) {
+    height: 14px;
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 1200px) {
     height: 16px;
+    margin-right: 10px;
   }
 }
