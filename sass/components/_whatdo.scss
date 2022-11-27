@@ -1,7 +1,11 @@
 .whatdo {
   @extend %container;
+  display: none;
   margin-top: 0px;
   padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 
 .whatdo__list {
