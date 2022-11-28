@@ -3,6 +3,9 @@
   justify-content: center;
   width: 370px;
   margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 }
 
 .checkbox__input {

@@ -15,8 +15,8 @@
 
 .modal {
   position: absolute;
-  top: 25%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 450px;
   height: 609px;
@@ -28,8 +28,6 @@
   transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 1200px) {
-    left: 50%;
-    top: 50%;
     width: 528px;
     height: 581px;
   }
