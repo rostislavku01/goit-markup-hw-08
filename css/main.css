@@ -252,6 +252,12 @@ address {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
@@ -371,6 +377,11 @@ address {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .contacts {
