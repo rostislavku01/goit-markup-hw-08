@@ -1778,6 +1778,11 @@ address {
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
 }
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
 
 .menu-container.is-open {
   -webkit-transform: translateX(0);
