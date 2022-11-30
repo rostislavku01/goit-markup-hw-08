@@ -30,9 +30,9 @@
 }
 
 .menu-container {
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 0;
+  left: -100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,7 +80,7 @@
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: #fff;
+  color: #212121;
   text-decoration: none;
 }
 
