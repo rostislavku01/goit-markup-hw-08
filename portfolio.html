@@ -40,14 +40,14 @@
           </button>
           <div class="menu-container is-open" data-menu id="menu-container">
             <div class="site-nav">
-              <ul class="list">
+              <ul class="site-nav__menu list">
                 <li class="site-nav__item">
                   <a href="./index.html" class="link site-nav__link">Студія</a>
                 </li>
                 <li class="site-nav__item">
                   <a
                     href="./portfolio.html"
-                    class="site-nav__link--current link"
+                    class="site-nav__link link site-nav__link--current"
                     >Портфоліо</a
                   >
                 </li>
@@ -111,7 +111,7 @@
                 <div class="content__thumb">
                   <img
                     class="content__photo"
-                    src="./images/portfol-1.jpg"
+                    src="./images/portfolio/portfol-1.jpg"
                     alt=""
                     width="370" />
                   <div class="overlay">
@@ -134,7 +134,7 @@
                 <div class="content__thumb">
                   <img
                     class="content__photo"
-                    src="./images/portfol-2.jpg"
+                    src="./images/portfolio/portfol-2.jpg"
                     alt=""
                     width="370" />
                   <div class="overlay"></div>
@@ -152,7 +152,7 @@
                 <div class="content__thumb">
                   <img
                     class="content__photo"
-                    src="./images/portfol-3.jpg"
+                    src="./images/portfolio/portfol-3.jpg"
                     alt=""
                     width="370" />
                   <div class="overlay"></div>
@@ -168,7 +168,7 @@
                 <div class="content__thumb">
                   <img
                     class="content__photo"
-                    src="./images/portfol-4.jpg"
+                    src="./images/portfolio/portfol-4.jpg"
                     alt=""
                     width="370" />
                   <div class="overlay"></div>
@@ -184,7 +184,7 @@
                 <div class="content__thumb">
                   <img
                     class="content__photo"
-                    src="./images/portfol-5.jpg"
+                    src="./images/portfolio/portfol-5.jpg"
                     alt=""
                     width="370" />
                   <div class="overlay"></div>
@@ -200,7 +200,7 @@
                 <div class="content__thumb">
                   <img
                     class="content__photo"
-                    src="./images/portfol-6.jpg"
+                    src="./images/portfolio/portfol-6.jpg"
                     alt=""
                     width="370" />
                   <div class="overlay"></div>
@@ -216,7 +216,7 @@
                 <div class="content__thumb">
                   <img
                     class="content__photo"
-                    src="./images/portfol-7.jpg"
+                    src="./images/portfolio/portfol-7.jpg"
                     alt=""
                     width="370" />
                   <div class="overlay"></div>
@@ -232,7 +232,7 @@
                 <div class="content__thumb">
                   <img
                     class="content__photo"
-                    src="./images/portfol-8.jpg"
+                    src="./images/portfolio/portfol-8.jpg"
                     alt=""
                     width="370" />
                   <div class="overlay"></div>
@@ -248,7 +248,7 @@
                 <div class="content__thumb">
                   <img
                     class="content__photo"
-                    src="./images/portfol-9.jpg"
+                    src="./images/portfolio/portfol-9.jpg"
                     alt=""
                     width="370" />
                   <div class="overlay"></div>
@@ -265,48 +265,50 @@
     </main>
     <footer class="footer">
       <div class="footer-nav">
-        <div class="footer-nav-container">
-          <p class="footer-nav-container__logo logo">
-            <span class="logo__main-part">Web</span
-            ><span class="logo__second-part--light">Studio</span>
-          </p>
-          <address>
-            <p class="footer-nav__adress">м. Київ, пр-т Лесі Українки, 26</p>
-            <p class="footer-nav__mail link">info@devstudio.com</p>
-            <p class="footer-nav__tel link">+38 096 111 11 11</p>
-          </address>
-        </div>
-        <div class="footer-socials">
-          <h3 class="footer-socials__title">ПРИЄДНУЙТЕСЬ</h3>
-          <div class="footer-socials__item">
-            <p class="footer-socials__icon">
-              <a href="" class="footer-socials__link">
-                <svg class="footer-socials__svg">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
+        <div class="footer-nav-tablet">
+          <div class="footer-nav-container">
+            <p class="footer-nav-container__logo logo">
+              <span class="logo__main-part">Web</span
+              ><span class="logo__second-part--light">Studio</span>
             </p>
-            <p class="footer-socials__icon">
-              <a href="" class="footer-socials__link">
-                <svg class="footer-socials__svg">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </p>
-            <p class="footer-socials__icon">
-              <a href="" class="footer-socials__link">
-                <svg class="footer-socials__svg">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </p>
-            <p class="footer-socials__icon">
-              <a href="" class="footer-socials__link">
-                <svg class="footer-socials__svg">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </p>
+            <address>
+              <p class="footer-nav__adress">м. Київ, пр-т Лесі Українки, 26</p>
+              <p class="footer-nav__mail link">info@devstudio.com</p>
+              <p class="footer-nav__tel link">+38 096 111 11 11</p>
+            </address>
+          </div>
+          <div class="footer-socials">
+            <h3 class="footer-socials__title">ПРИЄДНУЙТЕСЬ</h3>
+            <div class="footer-socials__item">
+              <p class="footer-socials__icon">
+                <a href="" class="footer-socials__link">
+                  <svg class="footer-socials__svg">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </p>
+              <p class="footer-socials__icon">
+                <a href="" class="footer-socials__link">
+                  <svg class="footer-socials__svg">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </p>
+              <p class="footer-socials__icon">
+                <a href="" class="footer-socials__link">
+                  <svg class="footer-socials__svg">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </p>
+              <p class="footer-socials__icon">
+                <a href="" class="footer-socials__link">
+                  <svg class="footer-socials__svg">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </p>
+            </div>
           </div>
         </div>
         <div class="footer-contacts">

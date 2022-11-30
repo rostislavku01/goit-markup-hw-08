@@ -16,34 +16,6 @@
   cursor: pointer;
 }
 
-.menu-button {
-  z-index: 1;
-  margin: 0;
-  padding: 0;
-  display: inline-flex;
-  border: none;
-  background-color: transparent;
-  &:hover,
-  &:focus {
-    fill: var(--accent-color);
-  }
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.menu-button .icon-cross {
-  display: none;
-}
-
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-
-.menu-button.is-open .icon-menu {
-  display: none;
-}
-
 .hero__button {
   display: inline-block;
   width: 200px;
