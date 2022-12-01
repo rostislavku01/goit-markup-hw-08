@@ -32,7 +32,7 @@
 .menu-container {
   position: absolute;
   top: 0;
-  left: -100%;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,6 +78,7 @@
   padding: 0;
   margin-bottom: auto;
   list-style: none;
+  fill: #212121;
 }
 
 .mobile-menu .link {
