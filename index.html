@@ -49,7 +49,7 @@
             aria-expanded="false"
             aria-controls="mobile__menu">
             <svg class="mobile__icon" width="40" height="40">
-              <use href="./images/symbol-defs.svg#menuopen"></use>
+              <use href="./images/symbol-defs.svg#icon-menu-mobile"></use>
             </svg>
           </button>
         </nav>
@@ -524,42 +524,45 @@
     </div>
     <!-- mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button
-        class="menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile__menu">
-        <svg class="mobile__icon" width="40" height="40">
+      <button class="menu-toggle js-close-menu">
+        <svg class="" width="40" height="40">
           <use href="./images/symbol-defs.svg#menuclose"></use>
+          >
         </svg>
       </button>
 
-      <ul class="mobile-menu list">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
+      <ul class="mobile-menu">
+        <li><a href="" class="nav__link">Студія</a></li>
+        <li><a href="" class="nav__link">Портфоліо</a></li>
+        <li><a href="" class="nav__link">Контакти</a></li>
       </ul>
-
-      <ul class="mobile-contacts list">
-        <li><a href="" class="link">+38 096 111 11 11</a></li>
-        <li><a href="" class="link">info@devstudio.com</a></li>
+      <ul>
+        <li>
+          <a href="tel:+380961111111" class="link__tell">+38096 111 11 11</a>
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="link"
+            >info@devstudio.com</a
+          >
+        </li>
       </ul>
-
-      <ul class="mobile-socials list">
-        <li class="mobile-socials-item">
-          <a href="" class="link">Instagram</a>
+      <ul class="mobile__list">
+        <li class="mobile__link">
+          <a class="mobile__list-link" href=""></a>Instagram
         </li>
-        <li class="mobile-socials-item"><a href="" class="link">Twitter</a></li>
-        <li class="mobile-socials-item">
-          <a href="" class="link">Facebook</a>
+        <li class="mobile__link">
+          <a class="mobile__list-link" href=""></a>Facebook
         </li>
-        <li class="mobile-socials-item">
-          <a href="" class="link">LinkedIn</a>
+        <li class="mobile__link">
+          <a class="mobile__list-link" href=""></a>Twitter
+        </li>
+        <li class="mobile__link">
+          <a class="mobile__list-link" href=""></a>Linkedin
         </li>
       </ul>
     </div>
     <!-- scripts -->
     <script src="./js/menu.js"></script>
-    <script src="./js/header-scroll.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
