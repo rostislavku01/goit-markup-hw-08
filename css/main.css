@@ -276,21 +276,8 @@ address {
     background-color: transparent;
   }
 }
-.site-nav__item {
-  margin-bottom: 32px;
-}
-.site-nav__item:last-child {
-  margin-bottom: 306px;
-}
-@media screen and (min-width: 768px) {
-  .site-nav__item:last-child {
-    margin-bottom: 32px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .site-nav__item:last-child {
-    margin-right: 0px;
-  }
+.site-nav__item:first-child {
+  margin-left: 88px;
 }
 
 @media screen and (min-width: 768px) {
