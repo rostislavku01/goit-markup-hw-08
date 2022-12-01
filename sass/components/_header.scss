@@ -17,14 +17,20 @@
 }
 
 .navigation {
+  margin-right: auto;
   @media screen and (max-width: 767px) {
     display: none;
   }
 }
 
 .site-nav {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  margin-right: auto;
   @media screen and (min-width: 768px) {
     display: flex;
+    gap: 50px;
   }
 }
 .menu-container {
@@ -49,7 +55,6 @@
     }
   }
   @media screen and (min-width: 768px) {
-    margin-right: 50px;
     &:last-child {
       margin-right: 0px;
     }
