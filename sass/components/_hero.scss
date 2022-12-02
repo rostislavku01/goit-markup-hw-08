@@ -27,11 +27,11 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero/bg-sm@2x.jpg);
+      url(../../images/hero/bg-sm@2x.jpg);
   }
 
   //tablet screen
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 481px) and (max-width: 768px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
