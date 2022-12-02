@@ -86,8 +86,8 @@
       <!--details-->
       <section class="details">
         <div class="details-description">
-          <ul class="details-description__list">
-            <li class="details-description__item icon-antenna">
+          <ul class="details-description__list list">
+            <li class="details-description__item">
               <div class="details-description__icon-div">
                 <svg class="details-description__icon antenna">
                   <use href="./images/symbol-defs.svg#antenna1"></use>
@@ -99,7 +99,7 @@
                 формування позиції.
               </p>
             </li>
-            <li class="details-description__item icon-clock">
+            <li class="details-description__item">
               <div class="details-description__icon-div">
                 <svg class="details-description__icon clock">
                   <use href="./images/symbol-defs.svg#clock1"></use>
@@ -111,7 +111,7 @@
                 тягне у себе.
               </p>
             </li>
-            <li class="details-description__item icon-diagram">
+            <li class="details-description__item">
               <div class="details-description__icon-div">
                 <svg class="details-description__icon diagram">
                   <use href="./images/symbol-defs.svg#diagram1"></use>
@@ -122,7 +122,7 @@
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="details-description__item icon-cosmonaut">
+            <li class="details-description__item">
               <div class="details-description__icon-div">
                 <svg class="details-description__icon astronaut">
                   <use href="./images/symbol-defs.svg#astronaut1"></use>
@@ -143,26 +143,41 @@
         <div>
           <h2 class="whatdo__title">Чим ми займаємося</h2>
           <ul class="whatdo__list list">
-            <li>
+            <li class="whatdo__item">
               <h3 class="whatdo__description">ДЕСКТОПНІ ДОДАТКИ</h3>
               <img
-                src="./images/whatdo/img5.jpg"
+                class="whatdo__img"
+                srcset="
+                  ./images/whatdo/whatdo-l.jpg    1x,
+                  ./images/whatdo/whatdo-l@2x.jpg 2x
+                "
+                src="./images/whatdo/whatdo-l.jpg"
                 alt="work-on-comp"
-                width="370" />
+                width="" />
             </li>
-            <li>
+            <li class="whatdo__item">
               <h3 class="whatdo__description">МОБІЛЬНІ ДОДАТКИ</h3>
               <img
-                src="./images/whatdo/img7.jpg"
+                class="whatdo__img"
+                srcset="
+                  ./images/whatdo/whatdo-l-1.jpg    1x,
+                  ./images/whatdo/whatdo-l@2x-1.jpg 2x
+                "
+                src="./images/whatdo/whatdo-l-1.jpg"
                 alt="work-on-phone"
-                width="370" />
+                width="" />
             </li>
-            <li>
+            <li class="whatdo__item">
               <h3 class="whatdo__description">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>
               <img
-                src="./images/whatdo/img6.jpg"
-                alt="work-on-desc"
-                width="370" />
+                class="whatdo__img"
+                srcset="
+                  ./images/whatdo/whatdo-l-2.jpg    1x,
+                  ./images/whatdo/whatdo-l@2x-2.jpg 2x
+                "
+                src="./images/whatdo/whatdo-l-2.jpg"
+                alt="work-on-comp"
+                width="" />
             </li>
           </ul>
         </div>
@@ -175,10 +190,22 @@
             <li class="team__item list">
               <img
                 class="team__img"
-                src="./images/team/img4.jpg"
+                srcset="
+                  ./images/team/team-4_270.jpg 270w,
+                  ./images/team/team-4_354.jpg 354w,
+                  ./images/team/team-4_450.jpg 450w,
+                  ./images/team/team-4_540.jpg 540w,
+                  ./images/team/team-4_708.jpg 708w,
+                  ./images/team/team-4_900.jpg 900w
+                "
+                sizes="(min-width:1200px) 270px,
+                  (min-width:768px) 354px,
+                  (min-width:480px) 450px,
+                  100vw"
+                src="./images/team/team-4_450.jpg"
                 alt="Ihor-Demianenko"
-                width=""
-                height="260" />
+                width="450"
+                height="460" />
               <p class="team__name">Ігор Дем'яненко</p>
               <p class="team__role">Product Designer</p>
               <ul class="social list">
@@ -214,11 +241,23 @@
             </li>
             <li class="team__item list">
               <img
-                class="team__img list"
-                src="./images/team/img1.jpg"
-                alt="Olga-Repina"
-                width=""
-                height="260" />
+                class="team__img"
+                srcset="
+                  ./images/team/team-1_270.jpg 270w,
+                  ./images/team/team-1_354.jpg 354w,
+                  ./images/team/team-1_450.jpg 450w,
+                  ./images/team/team-1_540.jpg 540w,
+                  ./images/team/team-1_708.jpg 708w,
+                  ./images/team/team-1_900.jpg 900w
+                "
+                sizes="(min-width:1200px) 270px,
+                  (min-width:768px) 354px,
+                  (min-width:480px) 450px,
+                  100vw"
+                src="./images/team/team-1_450.jpg"
+                alt="Olha-Repina"
+                width="450"
+                height="460" />
               <p class="team__name">Ольга Рєпіна</p>
               <p class="team__role">Frontend Developer</p>
               <ul class="social list">
@@ -255,10 +294,22 @@
             <li class="team__item list">
               <img
                 class="team__img"
-                src="./images/team/img3.jpg"
+                srcset="
+                  ./images/team/team-2_270.jpg 270w,
+                  ./images/team/team-2_354.jpg 354w,
+                  ./images/team/team-2_450.jpg 450w,
+                  ./images/team/team-2_540.jpg 540w,
+                  ./images/team/team-2_708.jpg 708w,
+                  ./images/team/team-2_900.jpg 900w
+                "
+                sizes="(min-width:1200px) 270px,
+                  (min-width:768px) 354px,
+                  (min-width:480px) 450px,
+                  100vw"
+                src="./images/team/team-2_450.jpg"
                 alt="Mykola-Tarasov"
-                width=""
-                height="260" />
+                width="450"
+                height="460" />
               <p class="team__name">Микола Тарасов</p>
               <p class="team__role">Marketing</p>
               <ul class="social list">
@@ -295,10 +346,22 @@
             <li class="team__item list">
               <img
                 class="team__img"
-                src="./images/team/img2.jpg"
+                srcset="
+                  ./images/team/team-3_270.jpg 270w,
+                  ./images/team/team-3_354.jpg 354w,
+                  ./images/team/team-3_450.jpg 450w,
+                  ./images/team/team-3_540.jpg 540w,
+                  ./images/team/team-3_708.jpg 708w,
+                  ./images/team/team-3_900.jpg 900w
+                "
+                sizes="(min-width:1200px) 270px,
+                (min-width:768px) 354px,
+                (min-width:480px) 450px,
+                100vw"
+                src="./images/team/team-3_450.jpg"
                 alt="Myhailo-Yermakov"
-                width=""
-                height="260" />
+                width="450"
+                height="460" />
               <p class="team__name">Михайло Єрмаков</p>
               <p class="team__role">UI Designer</p>
               <ul class="social list">
@@ -532,32 +595,38 @@
       </button>
 
       <ul class="mobile-menu">
-        <li><a href="" class="nav__link">Студія</a></li>
-        <li><a href="" class="nav__link">Портфоліо</a></li>
-        <li><a href="" class="nav__link">Контакти</a></li>
+        <li class="mobile-menu__list">
+          <a href="" class="mobile-menu__link">Студія</a>
+        </li>
+        <li class="mobile-menu__list">
+          <a href="" class="mobile-menu__link">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__list">
+          <a href="" class="mobile-menu__link">Контакти</a>
+        </li>
       </ul>
-      <ul>
-        <li>
+      <ul class="mobile-menu__contacts">
+        <li class="mobile-menu__list">
           <a href="tel:+380961111111" class="link__tell">+38096 111 11 11</a>
         </li>
-        <li>
-          <a href="mailto:info@devstudio.com" class="link"
+        <li class="list">
+          <a href="mailto:info@devstudio.com" class="link__mail"
             >info@devstudio.com</a
           >
         </li>
       </ul>
       <ul class="mobile__list">
-        <li class="mobile__link">
-          <a class="mobile__list-link" href=""></a>Instagram
+        <li class="mobile__link list">
+          <a class="mobile__list-link" href="">Instagram</a>
         </li>
-        <li class="mobile__link">
-          <a class="mobile__list-link" href=""></a>Facebook
+        <li class="mobile__link list">
+          <a class="mobile__list-link" href="">Facebook</a>
         </li>
-        <li class="mobile__link">
-          <a class="mobile__list-link" href=""></a>Twitter
+        <li class="mobile__link list">
+          <a class="mobile__list-link" href="">Twitter</a>
         </li>
-        <li class="mobile__link">
-          <a class="mobile__list-link" href=""></a>Linkedin
+        <li class="mobile__link list">
+          <a class="mobile__list-link" href="">Linkedin</a>
         </li>
       </ul>
     </div>
