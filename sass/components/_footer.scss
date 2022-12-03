@@ -103,6 +103,9 @@
   line-height: calc(20 / 16);
   letter-spacing: 0.03em;
   color: #ffffff;
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
 }
 
 .footer-contacts__icon {

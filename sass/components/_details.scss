@@ -4,9 +4,15 @@
 
 .details-description__item {
   margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
   @media screen and (min-width: 768px) {
-    &:nth-child(2n + 1) {
+    &:nth-last-child(2n) {
       margin-right: 30px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
     }
   }
   @media screen and (min-width: 1200px) {

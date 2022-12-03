@@ -31,10 +31,27 @@
   align-items: center;
   margin-right: 30px;
   margin-bottom: 30px;
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+  @media screen and (max-width: 449px) {
+    margin-right: 0;
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
   &:nth-child(2n) {
     margin-right: 0px;
     @media screen and (min-width: 768px) {
       margin-right: 30px;
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
     }
   }
 
