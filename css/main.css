@@ -60,6 +60,28 @@ address {
   max-width: 100%;
 }
 
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .button {
   font-family: "Roboto";
   font-weight: 700;
@@ -289,21 +311,6 @@ address {
   }
 }
 
-.site-nav__link {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
-  text-align: center;
-  letter-spacing: 0.02em;
-}
-.site-nav__link:visited {
-  color: var(--title-text-color);
-}
-.site-nav__link:hover, .site-nav__link:focus {
-  color: var(--accent-color);
-}
 @media screen and (min-width: 768px) {
   .site-nav__link {
     display: inline-block;
@@ -344,15 +351,6 @@ address {
   }
 }
 
-.contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
 @media screen and (max-width: 767px) {
   .contacts {
     display: none;
@@ -388,16 +386,6 @@ address {
   }
 }
 
-.contacts__item {
-  margin-bottom: 32px;
-  font-size: 34px;
-  line-height: 1.1764705882;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-}
-.contacts__item:visited {
-  color: var(--title-text-color);
-}
 @media screen and (min-width: 768px) {
   .contacts__item {
     display: -webkit-box;
@@ -419,6 +407,9 @@ address {
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .contacts__item:last-child {
+    margin-bottom: 10px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts__item {
@@ -427,29 +418,8 @@ address {
     line-height: 1.1428571429;
   }
   .contacts__item:last-child {
-    font-size: 14px;
-    line-height: 1.1428571429;
     margin-right: 0px;
-  }
-}
-
-.contacts__item:last-child:last-child {
-  font-size: 24px;
-  line-height: 1.1666666667;
-  margin-bottom: 64px;
-  color: var(--primary-text-color);
-}
-@media screen and (min-width: 768px) {
-  .contacts__item:last-child:last-child {
-    margin-bottom: 10px;
-    font-size: 12px;
-    line-height: 1.1666666667;
-    color: currentColor;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .contacts__item:last-child:last-child {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
