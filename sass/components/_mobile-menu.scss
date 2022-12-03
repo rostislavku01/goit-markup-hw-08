@@ -35,6 +35,8 @@
 .mobile-menu {
   padding: 0;
   margin: 0;
+  font-style: normal;
+  font-weight: 500;
   list-style: none;
   margin-bottom: auto;
 }
@@ -75,6 +77,8 @@
   display: flex;
   padding: 0;
   flex-wrap: wrap;
+  font-style: normal;
+  font-weight: 500;
   font-size: 18px;
   line-height: 22px;
 }
@@ -98,15 +102,6 @@
   &:last-child {
     padding-right: 0;
     margin-right: 0;
-  }
-}
-
-.site-nav__socials {
-  display: flex;
-  align-items: center;
-  margin-bottom: 48px;
-  @media screen and (min-width: 768px) {
-    display: none;
   }
 }
 
@@ -142,6 +137,8 @@
   padding: 0;
   margin: 0;
   margin-bottom: 64px;
+  font-style: normal;
+  font-weight: 500;
 }
 .link__tell {
   text-decoration: none;

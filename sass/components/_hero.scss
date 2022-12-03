@@ -1,10 +1,12 @@
 .hero {
-  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+
   text-align: center;
   //mobile screen
   background-image: linear-gradient(
@@ -47,6 +49,9 @@
   }
   //desctop screen
   @media screen and (min-width: 769px) {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
