@@ -164,22 +164,6 @@ address {
   border-radius: 4px;
 }
 
-.button-close {
-  padding: 0px;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  stroke: rgba(0, 0, 0, 0.1);
-  border: transparent;
-  background-color: transparent;
-}
-@media screen and (min-width: 1200px) {
-  .button-close {
-    top: 20px;
-    right: -30px;
-  }
-}
-
 .logo {
   font-family: "Raleway";
   font-size: 24px;
@@ -1558,6 +1542,22 @@ address {
   -webkit-transform: scale(0.1);
           transform: scale(0.1);
   opacity: 0;
+}
+
+.button-close {
+  padding: 0px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  stroke: rgba(0, 0, 0, 0.1);
+  border: transparent;
+  background-color: transparent;
+}
+@media screen and (min-width: 1200px) {
+  .button-close {
+    top: 20px;
+    right: -30px;
+  }
 }
 
 .close-image {

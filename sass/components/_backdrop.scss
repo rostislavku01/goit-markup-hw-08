@@ -38,6 +38,20 @@
   opacity: 0;
 }
 
+.button-close {
+  padding: 0px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  stroke: rgba(0, 0, 0, 0.1);
+  border: transparent;
+  background-color: transparent;
+  @media screen and (min-width: 1200px) {
+    top: 20px;
+    right: -30px;
+  }
+}
+
 .close-image {
   width: 30px;
   height: 30px;
